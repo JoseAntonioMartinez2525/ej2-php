@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>CALCULADORA</title>
+
+        <style type="text/css">
+        	.a{
+        		padding: 5px 10px;
+        	}
+        	.b{
+        		background: lightgray;
+        		width: 20%;
+        		padding-bottom: 10px;
+        		padding-top: 20px;
+        		margin: auto;
+        	}
+        	.d{
+        		text-align: center;
+        	}
+        	.op{
+        		margin-left: 50px;
+        	}
+
+        </style>
+    </head>
+    
+    <body>
+     <h2 class="d">CALCULADORA CON PHP</h2>    
+     <form  class="b" method="post" action="test.php" name="c">
+
+     	<label> Numero 1: </label> 
+     	<input type="text" name="n1"><br><br>
+
+     	<label> Numero 2: </label> 
+     	<input type="text" name="n2"><br><br>
+
+     	<label class="op" >Selecciona la operación:<br><select class="op" name="lista">
+     		<option value="sumar">sumar</option>
+     		<option value="restar">restar</option>
+      		<option value="multiplicar">multiplicar</option>
+     		<option value="dividir">dividir</option>  
+
+     	</select> </label>
+          
+           	<input class="a op" type="submit" name="Ver resultado">  
+
+     </form>
+    </body>
+    
+</html>
